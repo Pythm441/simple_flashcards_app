@@ -11,6 +11,9 @@ def add_card():
     if not question or not answer:
         print("Both question and answer are required.")
         return
+    elif '|' in question or '|' in answer:
+        print("The '|' character is not allowed in questions or answers.")
+        return
 
     with open(FLASHCARD_FILE, "a") as file:
         file.write(f"{question}|{answer}\n")
