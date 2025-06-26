@@ -30,7 +30,7 @@ def load_flashcards():
         if '|' in line:
             parts = line.strip().split("|")
             if len(parts) == 2:
-                flashcards.append((parts[0], parts[1]))
+                flashcards.append((parts[0], parts[1]))         
     return flashcards
 
 
