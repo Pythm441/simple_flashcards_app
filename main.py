@@ -57,6 +57,11 @@ def quiz():
 
     print(f"\n📊 Your final score: {score}/{len(flashcards)}")
 
+    if score/len(flashcards) < 0.5:
+        print("Review your cards and study well. you'll do better next time")
+    else:
+        print("Excllent work! No need to review now. Focus on other subjects")    
+
 
 def main():
     while True:
